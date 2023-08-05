@@ -103,10 +103,18 @@ function Navbar() {
           ref={sidebarRef}
           className={
             !nav
-              ? "fixed left-0 top-0 w-[75%] h-full bg-gray-600 ease-in-out duration-200 z-50"
+              ? "fixed left-0 top-0 w-[70%] h-full bg-gray-600 ease-in-out duration-200 z-50"
               : "fixed left-[-100%]"
           }
         >
+          <div className="h-24 flex items-center px-4">
+            <Link to="/" onClick={handleMenuItemClick}>
+              <h1 className="w-full font-bold  text-2xl md:text-3xl lg:text-4xl text-[#00df9a] ">
+                jaguar<span className="text-white italic">deva.</span>
+              </h1>
+            </Link>
+          </div>
+
           <ul className="p-4 uppercase">
             <Link to="/" onClick={handleMenuItemClick}>
               {" "}
