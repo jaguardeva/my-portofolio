@@ -1,5 +1,12 @@
 import React from "react";
 import Fotoku from "/public/Image/foto-me.png";
+import {
+  BiLogoJavascript,
+  BiLogoReact,
+  BiLogoTailwindCss,
+  BiLogoNodejs,
+} from "react-icons/bi";
+import { TbBrandNextjs } from "react-icons/tb";
 
 export default function Aboutme() {
   return (
@@ -22,7 +29,7 @@ export default function Aboutme() {
             </div>
           </div>
 
-          <div className="bg-gray-900 rounded-3xl md:py-5 md:px-14 p-7">
+          <div className="bg-gray-900 rounded-3xl md:py-10 md:px-14 p-7">
             <div className="max-w-[1240px] mx-auto">
               <p className="text-[#00df9a] font-bold md:text-4xl sm:text-3xl text-2xl py-2">
                 My Skill
@@ -34,65 +41,21 @@ export default function Aboutme() {
                 <div className="grid md:grid-cols-2">
                   <div>
                     <h1 className="text-xl my-5">Programming Languages :</h1>
-                    <div className=" w-10 md:w-20">
-                      <img src="/public/icon/javascript-icon.svg" alt="/" />
-                    </div>
+                    <BiLogoJavascript size={50} />
                   </div>
                   <div>
                     <h1 className="text-xl my-5">Framework :</h1>
-                    <div className=" w-10 md:w-20 flex flex-row gap-6">
-                      <img src="/public/icon/next-icon.svg" alt="/" />
-                      <img src="/public/icon/react-icon.svg" alt="/" />
-                      <img src="/public/icon/vite-icon.svg" alt="/" />
+                    <div className="flex flex-row gap-6">
+                      <BiLogoReact size={50} />
+                      <TbBrandNextjs size={50} />
+                      <BiLogoTailwindCss size={50} />
+                      <BiLogoNodejs size={50} />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div className=" hidden lg:block absolute top-[300px] right-40  z-[1]">
-          <img
-            className=" w-20 opacity-10"
-            src="/public/icon/react-icon.svg"
-            alt="/"
-          />
-        </div>
-        <div className="hidden lg:block absolute top-[420px] right-52  z-[1] rotate-45">
-          <img
-            className=" w-40 opacity-10"
-            src="/public/icon/javascript-icon.svg"
-            alt="/"
-          />
-        </div>
-        <div className="hidden lg:block absolute top-[200px] right-64 -rotate-45  z-[1]">
-          <img
-            className=" w-24 opacity-10"
-            src="/public/icon/tailwind-icon.svg"
-            alt="/"
-          />
-        </div>
-        <div className="hidden lg:block absolute top-[200px] right-10 -rotate-45  z-[1]">
-          <img
-            className=" w-24 opacity-10"
-            src="/public/icon/bootstrap-icon.svg"
-            alt="/"
-          />
-        </div>
-        <div className="hidden lg:block absolute top-[200px] -left-1 rotate-12  z-[1]">
-          <img
-            className=" w-52 opacity-10"
-            src="/public/icon/next-icon.svg"
-            alt="/"
-          />
-        </div>
-        <div className="hidden lg:block absolute bottom-36 left-36 rotate-12  z-[1]">
-          <img
-            className=" w-20 opacity-10"
-            src="/public/icon/vite-icon.svg"
-            alt="/"
-          />
         </div>
       </section>
     </div>

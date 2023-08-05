@@ -54,48 +54,6 @@ function Sosmed() {
             </a>
           </div>
         </div>
-        <div className=" hidden lg:block absolute top-[300px] right-40  z-[1]">
-          <img
-            className=" w-20 opacity-20"
-            src="/public/icon/react-icon.svg"
-            alt="/"
-          />
-        </div>
-        <div className="hidden lg:block absolute top-[420px] right-52  z-[1] rotate-45">
-          <img
-            className=" w-40 opacity-10"
-            src="/public/icon/javascript-icon.svg"
-            alt="/"
-          />
-        </div>
-        <div className="hidden lg:block absolute top-[200px] right-64 -rotate-45  z-[1]">
-          <img
-            className=" w-24 opacity-10"
-            src="/public/icon/tailwind-icon.svg"
-            alt="/"
-          />
-        </div>
-        <div className="hidden lg:block absolute top-[200px] right-10 -rotate-45  z-[1]">
-          <img
-            className=" w-24 opacity-10"
-            src="/public/icon/bootstrap-icon.svg"
-            alt="/"
-          />
-        </div>
-        <div className="hidden lg:block absolute top-[200px] -left-1 rotate-12  z-[1]">
-          <img
-            className=" w-52 opacity-10"
-            src="/public/icon/next-icon.svg"
-            alt="/"
-          />
-        </div>
-        <div className="hidden lg:block absolute bottom-36 left-36 rotate-12  z-[1]">
-          <img
-            className=" w-20 opacity-10"
-            src="/public/icon/vite-icon.svg"
-            alt="/"
-          />
-        </div>
       </section>
     </div>
   );
