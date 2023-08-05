@@ -16,14 +16,8 @@ export default function Hero() {
         <div className="flex items-center text-left">
           <p className="md:text-5xl sm:text-4xl text-xl font-bold  text-white py-2">
             I'am a
+            <span className="text-[#00df9a]"> Javascript Web Developer</span>
           </p>
-          <Typed
-            className="md:text-5xl sm:text-4xl text-xl font-bold md:pl-0 pl-2 text-[#00df9a]  py-2 md:ml-3 ml-0"
-            strings={["Front-End Web Developer", "Programmer learner"]}
-            typeSpeed={150}
-            backSpeed={150}
-            loop
-          />
         </div>
         <button className="z-10">
           <Link

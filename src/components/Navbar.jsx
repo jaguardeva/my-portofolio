@@ -65,7 +65,7 @@ function Navbar() {
                   : "hover:text-[#000300]  hover:bg-[#00df9a]"
               }`}
             >
-              About
+              About Me
             </Link>
           </li>
           <li>

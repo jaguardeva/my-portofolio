@@ -35,7 +35,7 @@ export default function Aboutme() {
                 My Skill
               </p>
               <h1 className="my-4">
-                Some programming languages and frameworks that I mastered:
+                Some programming languages and frameworks that I mastered.
               </h1>
               <div>
                 <div className="grid md:grid-cols-2">
