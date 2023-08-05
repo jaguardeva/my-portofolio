@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
-    <div className="text-white w-full">
+    <div className="text-white w-full bg-gradient-to-r from-[#000300] to-[#0c4b37]">
       <section className="md:max-w-[1240px] overflow-hidden mt-[-96px] h-screen mx-auto text-left flex flex-col justify-center px-4 ">
         <p className="text-[#00df9a] font-bold py-2 text-xl md:text-2xl">
           Hello, It's Me
@@ -14,14 +14,14 @@ export default function Hero() {
           Jaguar Deva Nanggalasakti Oktavian
         </h1>
         <div className="flex items-center text-left">
-          <p className="md:text-5xl sm:text-4xl text-xl font-bold  text-white z-[-1] py-2">
+          <p className="md:text-5xl sm:text-4xl text-xl font-bold  text-white py-2">
             I'am a
           </p>
           <Typed
-            className="md:text-5xl sm:text-4xl text-xl font-bold md:pl-0 pl-2 text-[#00df9a] z-[-1] py-2 md:ml-3 ml-0"
-            strings={["Web Developer"]}
-            typeSpeed={120}
-            backSpeed={120}
+            className="md:text-5xl sm:text-4xl text-xl font-bold md:pl-0 pl-2 text-[#00df9a]  py-2 md:ml-3 ml-0"
+            strings={["Front-End Web Developer", "Programmer learner"]}
+            typeSpeed={150}
+            backSpeed={150}
             loop
           />
         </div>
