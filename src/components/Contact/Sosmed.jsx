@@ -10,7 +10,7 @@ import {
 function Sosmed() {
   return (
     <div className="w-full">
-      <section className="text-white max-w-[1240px] h-screen mt-[-96px] mx-auto  px-4 flex flex-col justify-center">
+      <section className="text-white max-w-[1240px] mx-auto  px-4 py-8 lg:py-24 flex flex-col">
         <div className="flex flex-col gap-5">
           <h1 className="w-full font-bold text-3xl text-[#00df9a]">Here Me</h1>
           <p className="py-4 md:text-2xl text-xl">

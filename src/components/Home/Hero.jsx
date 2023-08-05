@@ -1,6 +1,6 @@
 import React from "react";
 import Typed from "react-typed";
-import { HiArrowSmRight } from "react-icons/hi";
+import { MdOutlineRoundaboutRight } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 export default function Hero() {
@@ -22,9 +22,9 @@ export default function Hero() {
         <button className="z-10">
           <Link
             to="/about"
-            className="bg-[#00df9a] md:w-[200px] w-[180px] rounded-md font-medium  my-6  py-3 px-4 text-black text-[17px]  md:text-xl  flex text-center justify-center items-center hover:opacity-90"
+            className="bg-[#00df9a] md:w-[200px] w-[150px] rounded-md font-medium  my-6  py-3 px-4 text-black text-[17px]  md:text-xl  flex text-center justify-center items-center hover:opacity-90 "
           >
-            About Me. <HiArrowSmRight size={35} className="ml-0" />
+            About Me
           </Link>
         </button>
       </section>

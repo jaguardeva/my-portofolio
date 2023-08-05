@@ -40,10 +40,13 @@ function Navbar() {
   return (
     <div className="w-full z-20 relative">
       <header className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
-        <h1 className="w-full font-bold  text-2xl md:text-3xl text-[#00df9a]">
-          jaguar<span className="text-white italic">deva.</span>
-        </h1>
-        <ul className="hidden md:flex justify-end items-center w-full">
+        <Link to="/">
+          <h1 className="w-full font-bold  text-2xl md:text-3xl lg:text-4xl text-[#00df9a]">
+            jaguar<span className="text-white italic">deva.</span>
+          </h1>
+        </Link>
+
+        <ul className="hidden lg:flex justify-end items-center w-full">
           <li>
             <Link
               to="/"
@@ -93,7 +96,7 @@ function Navbar() {
             </Link>
           </li>
         </ul>
-        <div onClick={handleNav} className="block md:hidden z-50">
+        <div onClick={handleNav} className="block lg:hidden z-50">
           {!nav ? <HiOutlineX size={25} /> : <HiMenuAlt2 size={25} />}
         </div>
         <aside
@@ -105,26 +108,22 @@ function Navbar() {
           }
         >
           <ul className="p-4 uppercase">
-            <li className={`p-4 border-b border-gray-400 `}>
-              <Link to="/" onClick={handleMenuItemClick}>
-                Home
-              </Link>
-            </li>
-            <li className={`p-4 border-b border-gray-400 `}>
-              <Link to="/about" onClick={handleMenuItemClick}>
-                About
-              </Link>
-            </li>
-            <li className={`p-4 border-b border-gray-400 `}>
-              <Link to="/project" onClick={handleMenuItemClick}>
-                Portofolio
-              </Link>
-            </li>
-            <li className={`p-4 $`}>
-              <Link to="/contact" onClick={handleMenuItemClick}>
-                Contact
-              </Link>
-            </li>
+            <Link to="/" onClick={handleMenuItemClick}>
+              {" "}
+              <li className={`p-4 border-b border-gray-400 `}>Home</li>
+            </Link>
+
+            <Link to="/about" onClick={handleMenuItemClick}>
+              <li className={`p-4 border-b border-gray-400 `}>About</li>
+            </Link>
+
+            <Link to="/project" onClick={handleMenuItemClick}>
+              <li className={`p-4 border-b border-gray-400 `}>Portofolio</li>
+            </Link>
+
+            <Link to="/contact" onClick={handleMenuItemClick}>
+              <li className={`p-4 $`}>Contact</li>
+            </Link>
           </ul>
         </aside>
       </header>
