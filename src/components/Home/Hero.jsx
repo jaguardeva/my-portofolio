@@ -13,17 +13,17 @@ export default function Hero() {
         </h1>
         <div className="flex items-center text-left">
           <p className="md:text-5xl sm:text-4xl text-xl font-bold  text-white py-2">
-            I'am a<span className="text-[#00df9a]"> Front-End Developer</span>
+            I'am a
+            <span className="text-[#00df9a]"> Front-End Web Developer</span>
           </p>
         </div>
-        <button className="z-10">
-          <Link
-            to="/about"
-            className="bg-[#00df9a] md:w-[200px] w-[150px] rounded-md font-medium  my-6  py-3 px-4 text-black text-[17px]  md:text-xl  flex text-center justify-center items-center hover:opacity-90 "
-          >
-            About Me
-          </Link>
-        </button>
+
+        <Link
+          to="/about"
+          className="bg-[#00df9a] md:w-[200px] w-[150px] rounded-md font-medium  my-6  py-3 px-4 text-black text-[17px]  md:text-xl  flex text-center justify-center items-center hover:opacity-90 "
+        >
+          About Me
+        </Link>
       </section>
     </div>
   );

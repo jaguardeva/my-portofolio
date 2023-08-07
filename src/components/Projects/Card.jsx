@@ -6,7 +6,7 @@ import Button from "./Fragments/Button";
 function Card() {
   return (
     <div className="w-full">
-      <section className="max-w-[1240px] h-screen mx-auto text-left flex flex-col justify-center p-4 text-white">
+      <section className="max-w-[1240px] h-[calc(100vh-96px)] mx-auto text-left flex flex-col justify-center p-4 text-white">
         <div className="grid md:grid-cols-2 lg:grid-cols-3">
           <div className="w-full">
             <div className="bg-gray-900 rounded-2xl overflow-hidden mb-10">
