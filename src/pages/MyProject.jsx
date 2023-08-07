@@ -1,10 +1,10 @@
 import React from "react";
-import Projects from "../components/Projects/Projects.jsx";
+import Card from "../components/Projects/Card.jsx";
 
 function MyProject() {
   return (
     <div>
-      <Projects />
+      <Card />
     </div>
   );
 }

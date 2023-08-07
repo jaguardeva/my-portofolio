@@ -6,6 +6,7 @@ import {
   FaTwitterSquare,
   FaWhatsappSquare,
 } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 function Sosmed() {
   return (
@@ -14,7 +15,7 @@ function Sosmed() {
         <div className="flex flex-col gap-5">
           <h1 className="w-full font-bold text-3xl text-[#00df9a]">Here Me</h1>
           <p className="py-4 md:text-2xl text-xl">
-            Feel free to to contact me any time, through any method below.
+            Feel free to contact me any time, through any method below.
           </p>
           <div className="flex">
             <a

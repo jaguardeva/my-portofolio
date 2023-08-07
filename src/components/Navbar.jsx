@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { HiMenuAlt2, HiOutlineX } from "react-icons/hi";
 import { Link, useLocation } from "react-router-dom";
 
-function Navbar() {
+function Navbar({ children }) {
   const location = useLocation();
   const [nav, setNav] = useState(true);
   const sidebarRef = useRef(null);
@@ -97,7 +97,7 @@ function Navbar() {
           </li>
         </ul>
         <div onClick={handleNav} className="block lg:hidden z-50">
-          {!nav ? <HiOutlineX size={25} /> : <HiMenuAlt2 size={25} />}
+          {!nav ? <HiOutlineX size={30} /> : <HiMenuAlt2 size={30} />}
         </div>
         <aside
           ref={sidebarRef}
@@ -135,6 +135,7 @@ function Navbar() {
           </ul>
         </aside>
       </header>
+      <main>{children}</main>
     </div>
   );
 }

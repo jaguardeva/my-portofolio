@@ -9,13 +9,14 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/project" element={<MyProject />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <Navbar>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/project" element={<MyProject />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Navbar>
     </BrowserRouter>
   );
 }

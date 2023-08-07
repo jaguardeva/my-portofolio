@@ -1,6 +1,4 @@
 import React from "react";
-import Typed from "react-typed";
-import { MdOutlineRoundaboutRight } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 export default function Hero() {
@@ -15,8 +13,7 @@ export default function Hero() {
         </h1>
         <div className="flex items-center text-left">
           <p className="md:text-5xl sm:text-4xl text-xl font-bold  text-white py-2">
-            I'am a
-            <span className="text-[#00df9a]"> Javascript Web Developer</span>
+            I'am a<span className="text-[#00df9a]"> Front-End Developer</span>
           </p>
         </div>
         <button className="z-10">

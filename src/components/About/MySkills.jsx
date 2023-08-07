@@ -5,7 +5,7 @@ import {
   BiLogoTailwindCss,
   BiLogoNodejs,
 } from "react-icons/bi";
-import { TbBrandNextjs } from "react-icons/tb";
+import NextIcon from "/Image/next-icon.svg";
 
 export default function MySkills() {
   return (
@@ -27,9 +27,9 @@ export default function MySkills() {
                 </div>
                 <div>
                   <h1 className="text-xl my-5">Framework :</h1>
-                  <div className="flex flex-row gap-6">
+                  <div className="flex flex-row gap-6 items-center">
                     <BiLogoReact size={50} />
-                    <TbBrandNextjs size={50} />
+                    <img src={NextIcon} alt="Next-icon" className="h-20" />
                     <BiLogoTailwindCss size={50} />
                     <BiLogoNodejs size={50} />
                   </div>
