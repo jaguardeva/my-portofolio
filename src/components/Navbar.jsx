@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 
 function Navbar({ children }) {
   const location = useLocation();
-  const [nav, setNav] = useState(true);
+  const [nav, setNav] = useState(false);
   const sidebarRef = useRef(null);
 
   const handleNav = () => {
@@ -12,17 +12,17 @@ function Navbar({ children }) {
   };
 
   const handleMenuItemClick = () => {
-    setNav(true);
+    setNav(false);
   };
 
   const closeSidebar = (e) => {
     if (sidebarRef.current && !sidebarRef.current.contains(e.target)) {
-      setNav(true);
+      setNav(false);
     }
   };
 
   useEffect(() => {
-    if (!nav) {
+    if (nav) {
       document.addEventListener("mousedown", closeSidebar);
     } else {
       document.removeEventListener("mousedown", closeSidebar);
@@ -31,7 +31,7 @@ function Navbar({ children }) {
     return () => {
       document.removeEventListener("mousedown", closeSidebar);
     };
-  }, [nav]);
+  }, [!nav]);
 
   const isActive = (path) => {
     return location.pathname === path;
@@ -97,12 +97,12 @@ function Navbar({ children }) {
           </li>
         </ul>
         <div onClick={handleNav} className="block lg:hidden z-50">
-          {!nav ? <HiOutlineX size={30} /> : <HiMenuAlt2 size={30} />}
+          {nav ? <HiOutlineX size={30} /> : <HiMenuAlt2 size={30} />}
         </div>
         <aside
           ref={sidebarRef}
           className={
-            !nav
+            nav
               ? "fixed left-0 top-0 w-[70%] h-full bg-gray-600 ease-in-out duration-200 z-50"
               : "fixed left-[-100%]"
           }

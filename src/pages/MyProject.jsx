@@ -1,11 +1,11 @@
 import React from "react";
-import Card from "../components/Projects/Card.jsx";
+import Projects from "../components/Projects/Projects.jsx";
 
 function MyProject() {
   return (
-    <div>
-      <Card />
-    </div>
+    <>
+      <Projects />
+    </>
   );
 }
 

@@ -14,7 +14,7 @@ export default function Aboutme() {
                 <p className="text-[#00df9a] font-bold md:text-4xl sm:text-3xl text-2xl py-2">
                   JAGUAR DEVA NANGGALASAKTI OKTAVIAN
                 </p>
-                <h1 className="my-4">
+                <h1 className="my-4 text-md md:text-xl">
                   I am An Informatics Student At Universitas Pembangunan
                   Nasional "Veteran" Jawa Timur
                 </h1>

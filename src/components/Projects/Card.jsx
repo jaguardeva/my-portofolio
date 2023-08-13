@@ -1,39 +1,47 @@
-import React from "react";
-
-import Tag from "./Fragments/Tag";
-import Button from "./Fragments/Button";
-
-function Card() {
+import React from "react"; // Import React
+import Tag from "./Fragments/Tag"; // Import Tag component
+function Card({ children }) {
   return (
-    <div className="w-full">
-      <section className="max-w-[1240px] h-[calc(100vh-96px)] mx-auto text-left flex flex-col justify-center p-4 text-white">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3">
-          <div className="w-full">
-            <div className="bg-gray-900 rounded-2xl overflow-hidden mb-10">
-              <img src="/Image/img-ayongopi.png" alt="" className="w-full" />
-              <div className="p-8">
-                <h1 className="font-bold text-[20px] sm:text-2xl md:text-3xl lg:text-[30xl] uppercase text-white">
-                  ayo<span className="text-[#EAC696] italic">ngopi.</span>
-                </h1>
-                <p className="text-base text-body-color leading-relaxed mb-5">
-                  It is a coffee shop business website
-                </p>
-                <div className="flex flex-wrap gap-1">
-                  <Tag name="react" link="https://react.dev/" />
-                  <Tag name="tailwindcss" link="https://tailwindcss.com/" />
-                </div>
-                <Button
-                  name="See Project"
-                  link="https://ayongopi.netlify.app/"
-                />
-              </div>
-            </div>
-            <h1 className="AyoNgopi"></h1>
-          </div>
-        </div>
-      </section>
+    <div className=" bg-gray-900 rounded-2xl overflow-hidden mb-10">
+      {children}
     </div>
   );
 }
+
+const Header = (props) => {
+  const { image, name } = props;
+  return <img src={image} alt={name} />;
+};
+
+const Body = (props) => {
+  const { name, children } = props;
+  return (
+    <>
+      <div className="p-8 pb-0">
+        <h1 className="font-bold text-xl sm:text-lg md:text-xl lg:text-2xl uppercase text-white mb-2">
+          {name}
+        </h1>
+        <p className=" text-sm lg:text-md text-body-color leading-relaxed">
+          {children}
+        </p>
+      </div>
+    </>
+  );
+};
+
+const Footer = (props) => {
+  const { tag } = props;
+  return (
+    <div className="flex gap-3 p-8">
+      {tag.map((item, index) => {
+        return <Tag key={index} tag={item.framework} link={item.link} />;
+      })}
+    </div>
+  );
+};
+
+Card.Header = Header;
+Card.Body = Body;
+Card.Footer = Footer;
 
 export default Card;
