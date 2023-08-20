@@ -6,7 +6,6 @@ import {
   FaTwitterSquare,
   FaWhatsappSquare,
 } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
 
 function Sosmed() {
   return (
@@ -21,35 +20,35 @@ function Sosmed() {
             <a
               href="https://www.facebook.com/deva.jaguar.5"
               target="_blank"
-              className="hover:text-[#00df9a] hover:scale-150 ease-in-out duration-150"
+              className="hover:text-[#00df9a] hover:scale-150 ease-in-out duration-150 md:p-4 md:pl-0"
             >
               <FaFacebookSquare size={40} />
             </a>
             <a
               href="https://www.instagram.com/jaguardeva_/"
               target="_blank"
-              className="hover:text-[#00df9a] hover:scale-150 ease-in-out duration-150 ml-5 md:ml-11"
+              className="hover:text-[#00df9a] hover:scale-150 ease-in-out duration-150 ml-5 md:ml-4 md:p-4"
             >
               <FaInstagramSquare size={40} />
             </a>
             <a
               href="https://twitter.com/JaguarDeva"
               target="_blank"
-              className="hover:text-[#00df9a] hover:scale-150 ease-in-out duration-150 ml-5 md:ml-11"
+              className="hover:text-[#00df9a] hover:scale-150 ease-in-out duration-150 ml-5 md:ml-4 md:p-4"
             >
               <FaTwitterSquare size={40} />
             </a>
             <a
               href=" https://wa.me/6285755682770?text=Hai,%20ayo%20ngopi%20mas%20!"
               target="_blank"
-              className="hover:text-[#00df9a] hover:scale-150 ease-in-out duration-150 ml-5 md:ml-11"
+              className="hover:text-[#00df9a] hover:scale-150 ease-in-out duration-150 ml-5 md:ml-4 md:p-4"
             >
               <FaWhatsappSquare size={40} />
             </a>
             <a
               href="https://github.com/jaguardeva"
               target="_blank"
-              className="hover:text-[#00df9a] hover:scale-150 ease-in-out duration-150 ml-5 md:ml-11"
+              className="hover:text-[#00df9a] hover:scale-150 ease-in-out duration-150 ml-5 md:ml-4 md:p-4"
             >
               <FaGithubSquare size={40} />
             </a>

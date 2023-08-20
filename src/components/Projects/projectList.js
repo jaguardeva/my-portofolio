@@ -2,7 +2,7 @@ const PROJECT_LIST = [
   {
     id: 1,
     name: "AyoNgopi",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt eius, amet nemo quia voluptates sequi perspiciatis quas voluptatibus incidunt voluptas.",
+    desc: "Coffee shop websites, which have a menu feature so that buyers can choose contents from the menu provided, buyers can place orders via chat on the WhatsApp application.",
     image: "/Image/img-ayongopi.png",
     tag: [
       {
