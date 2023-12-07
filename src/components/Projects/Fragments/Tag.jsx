@@ -1,5 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import propTypes from "prop-types";
 
 export default function Tag(props) {
   const { tag, link } = props;
@@ -15,3 +15,8 @@ export default function Tag(props) {
     </>
   );
 }
+
+Tag.propTypes = {
+  tag: propTypes.string,
+  link: propTypes.string,
+};

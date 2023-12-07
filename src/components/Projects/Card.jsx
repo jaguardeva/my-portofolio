@@ -1,10 +1,10 @@
-import React from "react"; // Import React
+// Import React
 import Tag from "./Fragments/Tag"; // Import Tag component
+import propTypes from "prop-types";
+
 function Card({ children }) {
   return (
-    <div className=" bg-gray-900 rounded-2xl overflow-hidden mb-10">
-      {children}
-    </div>
+    <div className=" bg-gray-900 rounded-2xl overflow-hidden">{children}</div>
   );
 }
 
@@ -38,6 +38,23 @@ const Footer = (props) => {
       })}
     </div>
   );
+};
+
+Card.propTypes = {
+  children: propTypes.node.isRequired,
+};
+Header.propTypes = {
+  image: propTypes.string.isRequired,
+  name: propTypes.string.isRequired,
+};
+
+Body.propTypes = {
+  name: propTypes.string.isRequired,
+  children: propTypes.node.isRequired,
+};
+
+Footer.propTypes = {
+  tag: propTypes.array.isRequired,
 };
 
 Card.Header = Header;

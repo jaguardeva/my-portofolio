@@ -1,5 +1,5 @@
-import React from "react";
-import Fotoku from "/public/Image/foto-me.png";
+/* eslint-disable react/no-unescaped-entities */
+import Fotoku from "/Image/foto-me.png";
 
 export default function Aboutme() {
   return (

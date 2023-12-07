@@ -15,6 +15,18 @@ const PROJECT_LIST = [
       },
     ],
   },
+  {
+    id: 2,
+    name: "ILC",
+    desc: "UPN Veteran Jatim Informatics learning club community website, using WordPress technology. ILC is one of several communities at the Faculty of Computer Science, UPN Veteran East Java, which focuses on learning web development.",
+    image: "/Image/ilc-web.png",
+    tag: [
+      {
+        framework: "Wordpress",
+        link: "https://wordpress.com",
+      },
+    ],
+  },
 ];
 
 export default PROJECT_LIST;

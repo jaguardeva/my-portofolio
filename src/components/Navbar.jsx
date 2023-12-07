@@ -1,6 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { HiMenuAlt2, HiOutlineX } from "react-icons/hi";
 import { Link, useLocation } from "react-router-dom";
+import propTypes from "prop-types";
 
 function Navbar({ children }) {
   const location = useLocation();
@@ -31,7 +32,7 @@ function Navbar({ children }) {
     return () => {
       document.removeEventListener("mousedown", closeSidebar);
     };
-  }, [!nav]);
+  }, [nav]);
 
   const isActive = (path) => {
     return location.pathname === path;
@@ -103,8 +104,8 @@ function Navbar({ children }) {
           ref={sidebarRef}
           className={
             nav
-              ? "fixed left-0 top-0 w-[70%] h-full bg-gray-600 ease-in-out duration-200 z-50"
-              : "fixed left-[-100%]"
+              ? "fixed left-0 top-0 w-[80%] h-full bg-gray-600 transition-all ease-in-out duration-300 z-50"
+              : "fixed left-[-100%] h-full top-0 w-[80%] transition-all ease-in-out duration-300 z-50"
           }
         >
           <div className="h-24 flex items-center px-4">
@@ -139,5 +140,9 @@ function Navbar({ children }) {
     </div>
   );
 }
+
+Navbar.propTypes = {
+  children: propTypes.string.isRequired,
+};
 
 export default Navbar;

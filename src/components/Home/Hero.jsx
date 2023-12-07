@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-router-dom";
 
 export default function Hero() {
@@ -12,7 +12,7 @@ export default function Hero() {
           Jaguar Deva Nanggalasakti Oktavian
         </h1>
         <div className="flex items-center text-left">
-          <p className="md:text-5xl sm:text-4xl text-xl font-bold  text-white py-2">
+          <p className="md:text-3xl  text-xl font-bold  text-white py-2">
             I'am a
             <span className="text-[#00df9a]"> Front-End Web Developer</span>
           </p>
@@ -20,7 +20,7 @@ export default function Hero() {
 
         <Link
           to="/about"
-          className="bg-[#00df9a] md:w-[200px] w-[150px] rounded-md font-medium  my-6  py-3 px-4 text-black text-[17px]  md:text-xl  flex text-center justify-center items-center hover:opacity-90 "
+          className="bg-[#00df9a] md:w-[200px] w-[150px] rounded-md font-medium  my-6  py-3 px-4 text-black text-[17px]  md:text-xl  flex text-center justify-center items-center hover:bg-transparent ease-in-out duration-100 hover:outline outline-[#00df9a] hover:text-[#00df9a] "
         >
           About Me
         </Link>

@@ -1,4 +1,3 @@
-import React from "react";
 import Aboutme from "../components/About/Aboutme";
 import MySkills from "../components/About/MySkills";
 
