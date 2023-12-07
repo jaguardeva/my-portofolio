@@ -116,28 +116,39 @@ function Navbar({ children }) {
             </Link>
           </div>
 
-          <ul className="p-4 uppercase">
-            <li className={`p-4 border-b border-gray-400 `}>
-              <Link to="/" onClick={handleMenuItemClick}>
-                Home
-              </Link>
-            </li>
-            <li className={`p-4 border-b border-gray-400 `}>
-              <Link to="/about" onClick={handleMenuItemClick}>
-                About
-              </Link>
-            </li>
-            <li className={`p-4 border-b border-gray-400 `}>
-              <Link to="/project" onClick={handleMenuItemClick}>
-                Portofolio
-              </Link>
-            </li>
-            <li className={`p-4 border-b border-gray-400 `}>
-              <Link to="/contact" onClick={handleMenuItemClick}>
-                Contact
-              </Link>
-            </li>
-          </ul>
+          <div className="p-4 uppercase w-full flex flex-col">
+            <Link
+              to="/"
+              onClick={handleMenuItemClick}
+              className="w-full p-4 border-b"
+            >
+              Home
+            </Link>
+
+            <Link
+              to="/about"
+              onClick={handleMenuItemClick}
+              className="w-full p-4 border-b"
+            >
+              About
+            </Link>
+
+            <Link
+              to="/project"
+              onClick={handleMenuItemClick}
+              className="w-full p-4 border-b"
+            >
+              Portofolio
+            </Link>
+
+            <Link
+              to="/contact"
+              onClick={handleMenuItemClick}
+              className="w-full p-4 border-b"
+            >
+              Contact
+            </Link>
+          </div>
         </aside>
       </header>
       <main>{children}</main>
