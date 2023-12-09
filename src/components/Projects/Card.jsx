@@ -2,9 +2,12 @@
 import Tag from "./Fragments/Tag"; // Import Tag component
 import propTypes from "prop-types";
 
-function Card({ children }) {
+function Card(props) {
+  const { classname, children } = props;
   return (
-    <div className=" bg-gray-900 rounded-2xl overflow-hidden">{children}</div>
+    <div className={` bg-gray-900 rounded-2xl overflow-hidden ${classname}`}>
+      {children}
+    </div>
   );
 }
 
@@ -42,6 +45,7 @@ const Footer = (props) => {
 
 Card.propTypes = {
   children: propTypes.node.isRequired,
+  classname: propTypes.string,
 };
 Header.propTypes = {
   image: propTypes.string.isRequired,

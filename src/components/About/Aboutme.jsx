@@ -3,7 +3,7 @@ import Fotoku from "/Image/foto-me.png";
 
 export default function Aboutme() {
   return (
-    <div className="w-full">
+    <div className="w-full animate-fade-up">
       <section className=" text-white max-w-[1240px]  mx-auto text-left flex flex-col justify-center">
         <div className="flex flex-col gap-10">
           <div className="bg-gray-900 rounded-3xl md:py-5 md:px-14 p-7">

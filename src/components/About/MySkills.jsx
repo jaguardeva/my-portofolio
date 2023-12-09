@@ -9,7 +9,7 @@ import NextIcon from "/Image/next-icon.svg";
 export default function MySkills() {
   return (
     <div>
-      <section className="text-white max-w-[1240px]  mx-auto text-left flex flex-col justify-center ">
+      <section className="text-white max-w-[1240px]  mx-auto text-left flex flex-col justify-center animate-fade-up animate-delay-500">
         <div className="bg-gray-900 rounded-3xl md:py-10 md:px-14 p-7">
           <div className="max-w-[1240px] mx-auto">
             <p className="text-[#00df9a] font-bold md:text-4xl sm:text-3xl text-2xl py-2">
