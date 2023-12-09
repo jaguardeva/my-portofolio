@@ -1,9 +1,12 @@
 import Sosmed from "../components/Contact/Sosmed";
+import Navbar from "../components/Navbar";
 
 export default function Contact() {
   return (
     <>
-      <Sosmed />
+      <Navbar>
+        <Sosmed />
+      </Navbar>
     </>
   );
 }

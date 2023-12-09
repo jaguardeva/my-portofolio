@@ -157,7 +157,7 @@ function Navbar({ children }) {
 }
 
 Navbar.propTypes = {
-  children: propTypes.string.isRequired,
+  children: propTypes.node.isRequired,
 };
 
 export default Navbar;
