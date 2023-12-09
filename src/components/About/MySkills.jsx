@@ -5,11 +5,46 @@ import {
   BiLogoNodejs,
 } from "react-icons/bi";
 import NextIcon from "/Image/next-icon.svg";
+import { useEffect, useRef } from "react";
 
 export default function MySkills() {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.01, // Trigger when 50% of the element is visible
+    };
+
+    const handleIntersection = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-fade-up");
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, options);
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div>
-      <section className="text-white max-w-[1240px]  mx-auto text-left flex flex-col justify-center animate-fade-up animate-delay-500">
+      <section
+        ref={sectionRef}
+        className="text-white max-w-[1240px] mx-auto text-left flex flex-col justify-center translate-y-10"
+      >
         <div className="bg-gray-900 rounded-3xl md:py-10 md:px-14 p-7">
           <div className="max-w-[1240px] mx-auto">
             <p className="text-[#00df9a] font-bold md:text-4xl sm:text-3xl text-2xl py-2">
@@ -24,7 +59,7 @@ export default function MySkills() {
                   <h1 className="text-md md:text-xl my-5">
                     Programming Languages :
                   </h1>
-                  <div className="h-10 flex  items-center overflow-hidden">
+                  <div className="h-10 flex items-center overflow-hidden">
                     <BiLogoJavascript size={50} />
                   </div>
                 </div>
