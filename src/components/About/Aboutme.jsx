@@ -26,9 +26,18 @@ export default function Aboutme() {
                 <p className="text-[#00df9a] font-bold md:text-4xl sm:text-3xl text-2xl py-2">
                   JAGUAR DEVA NANGGALASAKTI OKTAVIAN
                 </p>
-                <h1 className="my-4 text-md md:text-xl">
-                  I am An Informatics Student At Universitas Pembangunan
-                  Nasional "Veteran" Jawa Timur
+                <h1 className="my-4 text-md md:text-lg">
+                  I am a 4th semester student of informatics
+                  engineering/computer science at the Universitas Pembangunan
+                  Nasional “Veteran” Jawa Timur with a GPA of 3.96/4.00. A web
+                  development enthusiast, specializing in Front-End development,
+                  I have a strong understanding of HTML, CSS, and JavaScript, as
+                  well as experience using frameworks such as React.js and
+                  Next.js. With a keen eye for detail and a passion for creating
+                  intuitive user interfaces, I am dedicated to delivering
+                  high-quality web solutions. I thrive in collaborative
+                  environments and am always eager to learn and stay updated
+                  with the latest technologies in the field of web development.
                 </h1>
               </div>
             </div>

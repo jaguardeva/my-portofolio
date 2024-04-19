@@ -7,10 +7,7 @@ export default function Projects() {
       <h1 className="font-bold text-xl md:text-2xl mb-5">Web Projects</h1>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10">
         {PROJECT_LIST.map((item, index) => (
-          <Card
-            key={index}
-            classname={`animate-fade-up animate-delay-${index * 500}`}
-          >
+          <Card key={index} dataAos={"fade-up"} aosDelay={index * 500}>
             <Card.Header image={item.image} name={item.name} />
             <Card.Body name={item.name}>{item.desc}</Card.Body>
             <Card.Footer tag={item.tag} />
