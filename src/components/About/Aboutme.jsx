@@ -14,7 +14,7 @@ export default function Aboutme() {
       <section className=" text-white max-w-[1240px]  mx-auto text-left flex flex-col justify-center">
         <div className="flex flex-col gap-10">
           <div className="bg-gray-900 rounded-3xl md:py-5 md:px-14 p-7">
-            <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
+            <div className="max-w-[1240px] mx-auto grid lg:grid-cols-2">
               <img
                 src={Fotoku}
                 alt="/"
@@ -26,7 +26,7 @@ export default function Aboutme() {
                 <p className="text-[#00df9a] font-bold md:text-4xl sm:text-3xl text-2xl py-2">
                   JAGUAR DEVA NANGGALASAKTI OKTAVIAN
                 </p>
-                <h1 className="my-4 text-md md:text-lg">
+                <h1 className="my-4 text-sm  md:text-lg">
                   I am a 4th semester student of informatics
                   engineering/computer science at the Universitas Pembangunan
                   Nasional “Veteran” Jawa Timur with a GPA of 3.96/4.00. A web

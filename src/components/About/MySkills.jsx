@@ -26,13 +26,13 @@ export default function MySkills() {
           <p className="text-[#00df9a] font-bold md:text-4xl sm:text-3xl text-2xl py-2">
             My Skill
           </p>
-          <h1 className="my-4 text-md md:text-xl">
+          <h1 className="my-4 text-md md:text-lg">
             Some programming languages and frameworks that I mastered.
           </h1>
           <div>
             <div className="grid md:grid-cols-2">
               <div>
-                <h1 className="text-md md:text-xl my-5">
+                <h1 className="text-md md:text-lg my-5">
                   Programming Languages :
                 </h1>
                 <div className="h-10 gap-3 flex items-center overflow-hidden">
@@ -42,7 +42,7 @@ export default function MySkills() {
                 </div>
               </div>
               <div>
-                <h1 className="text-md md:text-xl my-5">Framework :</h1>
+                <h1 className="text-md md:text-lg my-5">Framework :</h1>
                 <div className="flex h-10 gap-6 items-center  overflow-hidden">
                   <BiLogoReact size={50} />
                   <img src={NextIcon} alt="Next-icon" className="h-20" />

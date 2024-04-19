@@ -9,10 +9,10 @@ import {
 function Sosmed() {
   return (
     <div className="w-full">
-      <section className="text-white max-w-[1240px] mx-auto  px-4 py-8 lg:py-24 flex flex-col">
+      <section className="text-white max-w-[1240px] mx-auto  px-4 py-8 lg:py-10 flex flex-col">
         <div className="flex flex-col gap-5">
           <h1 className="w-full font-bold text-3xl text-[#00df9a]">Here Me</h1>
-          <p className="py-4 md:text-2xl text-md font-normal">
+          <p className="py-4 md:text-xl text-md font-normal">
             Feel free to contact me any time, through any method below.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-5 place-items-center md:place-items-start gap-10">

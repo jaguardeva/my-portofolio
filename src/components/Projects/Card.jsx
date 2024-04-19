@@ -1,15 +1,11 @@
 import Tag from "./Fragments/Tag";
 import propTypes from "prop-types";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+
 
 function Card(props) {
   const { classname, children, dataAos, aosDelay } = props;
 
-  useEffect(() => {
-    Aos.init({ duration: 2000 }); // Initialize AOS
-  }, []);
+
 
   return (
     <div
