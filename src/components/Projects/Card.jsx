@@ -1,11 +1,8 @@
 import Tag from "./Fragments/Tag";
 import propTypes from "prop-types";
 
-
 function Card(props) {
   const { classname, children, dataAos, aosDelay } = props;
-
-
 
   return (
     <div
@@ -20,7 +17,7 @@ function Card(props) {
 
 const Header = (props) => {
   const { image, name } = props;
-  return <img src={image} alt={name} />;
+  return <img src={image} alt={name} loading="lazy" />;
 };
 
 const Body = (props) => {
