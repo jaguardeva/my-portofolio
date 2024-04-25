@@ -27,6 +27,22 @@ const PROJECT_LIST = [
       },
     ],
   },
+  {
+    id: 3,
+    name: "SISKRIP",
+    desc: "Simple thesis registration information system, has a multi user login feature, created using PHP, Tailwind CSS, MySQL database.",
+    image: "/Image/siskrip.jpg",
+    tag: [
+      {
+        framework: "PHP",
+        link: "https://www.php.net/",
+      },
+      {
+        framework: "Tailwindcss",
+        link: "https://tailwindcss.com/",
+      },
+    ],
+  },
 ];
 
 export default PROJECT_LIST;
